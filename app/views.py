@@ -11,5 +11,5 @@ from .models import BlogPost
 class BlogPostViewSet(ModelViewSet):
     queryset = BlogPost.objects.all()
     serializer_class = BlogPostSerializers
-    permission_classes = [permissions.ALlowAny]
+    # permission_classes = [permissions.ALlowAny]
     http_method_names = ['get','head']
