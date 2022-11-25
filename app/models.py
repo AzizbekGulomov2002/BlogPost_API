@@ -11,6 +11,8 @@ class BlogPost(models.Model):
     class Meta:
         verbose_name = 'Maqola'
         verbose_name_plural = 'Maqolalar'
+        ordering = ('sana', )
+        
 
 
     def __str__(self):
